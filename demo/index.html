@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="styles.css">
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="../dist/jqueryFlickrAlbum.js"></script>
+
+  </head>
+  <body>
+    <h1>Jquery Flickr Album</h1>
+    <h2>Plugin minimal demo</h2>
+
+
+    <div id="album1"><h3>Album1</h3></div>
+
+    <div id="album2"><h3>Album2</h3></div>
+
+
+  </body>
+  <script>
+    $( "#album1" ).flickrAlbum(
+      {
+        api_key: "249bebc10fb56423e46735786ae7b3b6",
+        photoset_id: "72157624286813182",
+        listed_size: "q",
+      }
+    );
+
+    $( "#album2" ).flickrAlbum(
+      {
+        api_key: "249bebc10fb56423e46735786ae7b3b6",
+        photoset_id: "72157629174219197",
+        listed_size: "s",
+      }
+    );
+  </script>
+</html>
